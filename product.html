@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<header class="text-gray-400  body-font">
+
+    <style>
+    header{
+			background-image: url('https://source.unsplash.com/featured?rain dark forest');
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+			background-size: cover;
+
+		}
+  .blur-bg {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #fff;
+  }
+</style>
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-blur">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+
+             </svg>
+             <path> d="C:\Users\DELL\IdeaProjects\imageindex\I.svg"></path>-->
+            <img src="I.jpg" alt="logo" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" class="w-24 h-24 text-white p-2  rounded-full" viewBox="0 0 24 24">
+            <span class="ml-3 text-xl">Image Studio</span>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <style>
+		.white-text {
+			color: white;
+		}
+	</style>
+            <a href="index.html" class="mr-0 hover:text-white">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-4 h-4">
+                <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+            </svg></a>
+            <style>
+		.white-text {
+			color: black;
+		}
+	</style>
+            <a href="index.html" class="mr-5 hover:black-text text-white">Home</a>
+
+
+            <a href="product.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="White" class="w-4 h-4">
+                    <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                </svg>
+
+                <a href="product.html" class="mr-5 hover:text-white text-white">Product</a>
+            </a>
+
+            <a  href="order.html"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+            </svg></a>
+
+            <a  href="order.html" class="mr-5 hover:text-white text-white">Order</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M19.449 8.448L16.388 11a4.52 4.52 0 010 2.002l3.061 2.55a8.275 8.275 0 000-7.103zM15.552 19.45L13 16.388a4.52 4.52 0 01-2.002 0l-2.55 3.061a8.275 8.275 0 007.103 0zM4.55 15.552L7.612 13a4.52 4.52 0 010-2.002L4.551 8.45a8.275 8.275 0 000 7.103zM8.448 4.55L11 7.612a4.52 4.52 0 012.002 0l2.55-3.061a8.275 8.275 0 00-7.103 0zm8.657-.86a9.776 9.776 0 011.79 1.415 9.776 9.776 0 011.414 1.788 9.764 9.764 0 010 10.211 9.777 9.777 0 01-1.415 1.79 9.777 9.777 0 01-1.788 1.414 9.764 9.764 0 01-10.212 0 9.776 9.776 0 01-1.788-1.415 9.776 9.776 0 01-1.415-1.788 9.764 9.764 0 010-10.212 9.774 9.774 0 011.415-1.788A9.774 9.774 0 016.894 3.69a9.764 9.764 0 0110.211 0zM14.121 9.88a2.985 2.985 0 00-1.11-.704 3.015 3.015 0 00-2.022 0 2.985 2.985 0 00-1.11.704c-.326.325-.56.705-.704 1.11a3.015 3.015 0 000 2.022c.144.405.378.785.704 1.11.325.326.705.56 1.11.704.652.233 1.37.233 2.022 0a2.985 2.985 0 001.11-.704c.326-.325.56-.705.704-1.11a3.016 3.016 0 000-2.022 2.985 2.985 0 00-.704-1.11z" clip-rule="evenodd" />
+            </svg>
+
+            <a class="mr-5 hover:white-text text-white">Support</a>
+        </nav>
+        <style>
+    button{
+			background-image: url('https://source.unsplash.com/featured?white');
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+			background-size: cover;
+
+		}
+  .blur-bg {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #fff;
+  }
+</style>
+        <style>
+		.black-text {
+			color: black;
+		}
+	</style>
+        <button class="inline-flex items-center bg-blur border-0 py-1 px-3 focus:outline-none hover:bg-gray-999 rounded text-base black-text mt-4 md:mt-0">location
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+            </svg>
+
+        </button>
+    </div>
+</header>
+<body>
+<section class="text-gray-400  body-font">
+    <style>
+body {
+  background: linear-gradient(to bottom, #2c3e50, #1f2d3d, #2c3e50);
+}
+
+.tshirt-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.tshirt {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin: 50px auto 0;
+   background-color: #2c3e50;
+ }
+
+
+
+.animation {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInSlide 2s ease-in-out forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+	</style>
+    <script>
+        function animateOnScroll() {
+  const elements = document.querySelectorAll('.slide-in-left');
+  elements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elTop < windowHeight) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+    <div class="animation">
+    <div class="tshirt">
+        <h1 class="tshirt-heading">T_SHIRT</h1>
+    </div>
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="tshirt1.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Black T-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed T-shirt (black)</h2>
+                    <p class="mt-1">200 ruppes per print</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="tshirt14.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">White t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed T-shirt (White)</h2>
+                    <p class="mt-1">200 ruppes per print</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="tshirt15.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="astshirt.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <!---->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="astshirt1.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+           <!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="frame.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">photo frame</h3>
+                    <h2 class="text-white title-font text-lg font-medium">1000+ frame of diffrent category</h2>
+                    <p class="mt-1">price accordingly</p>
+                </div>
+            </div>-->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="99thsirt.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="99tshirt1.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="friendstshirt.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="animetshirt.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="animetshirt1.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="animetshirt2.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="animetshirt3.jpg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">zudio t-shirt</h3>
+                    <h2 class="text-white title-font text-lg font-medium">Printed t-shirt</h2>
+                    <p class="mt-1">200 ruppes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- mug -->
+<section class="text-gray-400  body-font">
+    <style>
+body {
+  background: linear-gradient(to bottom, #2c3e50, #1f2d3d, #2c3e50);
+}
+
+.tshirt-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.tshirt {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin: 50px auto 0;
+   background-color: #2c3e50;
+ }
+
+
+
+.animation {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInSlide 2s ease-in-out forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+	</style>
+    <script>
+        function animateOnScroll() {
+  const elements = document.querySelectorAll('.slide-in-left');
+  elements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elTop < windowHeight) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+    <div class="animation">
+
+
+
+
+
+<div class="tshirt">
+    <h1 class="tshirt-heading">mug&bottle</h1>
+</div>
+
+<div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mug17.jpg">
+    </a>
+    <div class="mt-4">
+        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+        <h2 class="text-white title-font text-lg font-medium">ceramic printed mug</h2>
+        <p class="mt-1">200 ruppes</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="sipper.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed sipper</h3>
+                <h2 class="text-white title-font text-lg font-medium">metalic printed bottle</h2>
+                <p class="mt-1">300 ruppes</p>
+            </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="sipper1.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed sipper</h3>
+                <h2 class="text-white title-font text-lg font-medium">metalic printed bottle</h2>
+                <p class="mt-1">200 ruppes</p>
+            </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="officemug.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+                <h2 class="text-white title-font text-lg font-medium">ceramic printed mug</h2>
+                <p class="mt-1">200 ruppes</p>
+            </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="metalicmug.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+                <h2 class="text-white title-font text-lg font-medium">metalic printed mug</h2>
+                <p class="mt-1">300 ruppes</p>
+            </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mug16.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+                <h2 class="text-white title-font text-lg font-medium">ceramic printed mug</h2>
+                <p class="mt-1">200 ruppes</p>
+            </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mug15.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+                <h2 class="text-white title-font text-lg font-medium">ceramic printed mug</h2>
+                <p class="mt-1">200 ruppes</p>
+            </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mug14.jpg">
+            </a>
+            <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed mug</h3>
+                <h2 class="text-white title-font text-lg font-medium">ceramic printed mug</h2>
+                <p class="mt-1">200 ruppes</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- mobile cover -->
+<section class="text-gray-400  body-font">
+    <style>
+body {
+  background: linear-gradient(to bottom, #2c3e50, #1f2d3d, #2c3e50);
+}
+
+.tshirt-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.tshirt {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin: 50px auto 0;
+   background-color: #2c3e50;
+ }
+
+
+
+.animation {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInSlide 2s ease-in-out forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+	</style>
+    <script>
+        function animateOnScroll() {
+  const elements = document.querySelectorAll('.slide-in-left');
+  elements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elTop < windowHeight) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+    <div class="animation">
+
+
+
+
+
+
+	</style>
+        <div class="tshirt">
+            <h1 class="tshirt-heading">mobile cover</h1>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mobile17.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed cover</h3>
+                        <h2 class="text-white title-font text-lg font-medium">silicon/hard cover </h2>
+                        <p class="mt-1">200 ruppes</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mobile14.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed cover</h3>
+                        <h2 class="text-white title-font text-lg font-medium">silicon/hard cover </h2>
+                        <p class="mt-1">200 ruppes</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mobile15.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed cover</h3>
+                        <h2 class="text-white title-font text-lg font-medium">silicon/hard cover </h2>
+                        <p class="mt-1">200 ruppes</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="mobile16.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">printed cover</h3>
+                        <h2 class="text-white title-font text-lg font-medium">silicon/hard cover </h2>
+                        <p class="mt-1">200 ruppes</p>
+                    </div>
+                </div>
+
+
+</section>
+
+                <!-- mobile cover -->
+                <section class="text-gray-400  body-font">
+                    <style>
+body {
+  background: linear-gradient(to bottom, #2c3e50, #1f2d3d, #2c3e50);
+}
+
+.tshirt-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.tshirt {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin: 50px auto 0;
+   background-color: #2c3e50;
+ }
+
+
+
+.animation {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInSlide 2s ease-in-out forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+	</style>
+                    <script>
+        function animateOnScroll() {
+  const elements = document.querySelectorAll('.slide-in-left');
+  elements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elTop < windowHeight) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+                    <div class="animation">
+                        </style>
+                        <div class="tshirt">
+                            <h1 class="tshirt-heading">Frames</h1>
+                        </div>
+                        <div class="container px-5 py-24 mx-auto">
+                            <div class="flex flex-wrap -m-4">
+                                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="frame1.jpg">
+                                    </a>
+                                    <div class="mt-4">
+                                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Frame</h3>
+                                        <h2 class="text-white title-font text-lg font-medium">Frame </h2>
+                                        <p class="mt-1">price according to size</p>
+                                    </div>
+                                </div>
+                                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="frame15.jpg">
+                                    </a>
+                                    <div class="mt-4">
+                                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Frame</h3>
+                                        <h2 class="text-white title-font text-lg font-medium">Frame </h2>
+                                        <p class="mt-1">price according to size</p>
+                                    </div>
+                                </div>
+                                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Frame14.jpg">
+                                    </a>
+                                    <div class="mt-4">
+                                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Frame</h3>
+                                        <h2 class="text-white title-font text-lg font-medium">Frame </h2>
+                                        <p class="mt-1">price according to size</p>
+                                    </div>
+                                </div>
+                                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                                    <a href="order.html" class="block relative h-48 rounded overflow-hidden">
+                                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Frame16.jpg">
+                                    </a>
+                                    <div class="mt-4">
+                                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Frame</h3>
+                                        <h2 class="text-white title-font text-lg font-medium">Frame </h2>
+                                        <p class="mt-1">price according to size</p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </section>
+            </body>
+                <style>
+		footer {
+			background-image: url('https://source.unsplash.com/featured?monsoon forest');
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+			background-size: cover;
+
+		}
+	</style>
+                <footer class="text-gray-400 body-font ">
+                    <style>
+  .blur-bg {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #fff;
+  }
+</style>
+                    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col blur-bg">
+                        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                            <img src="I.jpg" alt="logo" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" class="w-24 h-24 text-white p-2  rounded-full" viewBox="0 0 24 24">
+                            <style>
+		.white-text {
+			color: white;
+		}
+	</style>
+                            <span class="ml-3 text-xl text-white">Image Studio</span>
+                        </a>
+                        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 text-white ">© Image Studio
+                            <a  href="https://instagram.com/image_digistudio?igshid=MzRlODBiNWFlZA==" class="text-white ml-1" target="_blank" rel="noopener noreferrer">Rakesh Ghoghari</a>
+                        </p>
+                        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a  href="https://instagram.com/image_digistudio?igshid=MzRlODBiNWFlZA==" class="text-gray-400">
+        <svg fill="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a  href="https://instagram.com/image_digistudio?igshid=MzRlODBiNWFlZA==" class="ml-3 text-gray-400">
+        <svg fill="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a  href="https://instagram.com/image_digistudio?igshid=MzRlODBiNWFlZA==" class="ml-3 text-gray-400">
+        <svg fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a  href="https://instagram.com/image_digistudio?igshid=MzRlODBiNWFlZA==" class="ml-3 text-gray-400">
+        <svg fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+                    </div>
+                </footer>
+</html>
